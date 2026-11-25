@@ -1,0 +1,1372 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a1020">
+<meta name="description" content="روراست؛ فضایی برای دریافت پیام‌های ناشناس، حرف‌های نگفته و بازخوردهای صادقانه.">
+<meta property="og:title" content="روراست | بعضی حرف‌ها باید گفته شوند">
+<meta property="og:description" content="تجربه‌ای تازه برای دریافت پیام‌های ناشناس و بازخوردهای صادقانه.">
+<title>روراست | به‌زودی</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#090e1c;
+  --surface:#111a30;
+  --surface2:#16223d;
+  --border:#293956;
+  --white:#f5f7ff;
+  --muted:#9baac7;
+  --blue:#5c91ff;
+  --cyan:#4bd8df;
+  --purple:#a68aff;
+  --green:#63d9b5;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family:Vazirmatn,Tahoma,sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  overflow-x:hidden;
+  line-height:1.9;
+}
+
+body::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 10% 10%,#184a8140,transparent 35%),
+    radial-gradient(ellipse at 90% 20%,#613a9140,transparent 35%),
+    radial-gradient(ellipse at 50% 100%,#193b6730,transparent 50%);
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
+button {
+  font-family:inherit;
+}
+
+.container {
+  width:min(1160px,calc(100% - 40px));
+  margin:auto;
+}
+
+header,main,footer {
+  position:relative;
+  z-index:1;
+}
+
+/* HEADER */
+
+header {
+  height:82px;
+  border-bottom:1px solid #ffffff10;
+  background:#090e1ceF;
+  backdrop-filter:blur(18px);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.nav {
+  height:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:21px;
+  font-weight:900;
+}
+
+.brand svg {
+  width:43px;
+  height:43px;
+}
+
+.brand small {
+  display:block;
+  direction:ltr;
+  text-align:right;
+  font-size:9px;
+  letter-spacing:3px;
+  color:#8494b5;
+}
+
+.nav-links {
+  display:flex;
+  gap:25px;
+  align-items:center;
+  color:#aab7d0;
+  font-size:12px;
+}
+
+.nav-links a {
+  transition:.25s;
+}
+
+.nav-links a:hover {
+  color:white;
+}
+
+.nav-button {
+  padding:10px 17px;
+  border-radius:13px;
+  border:1px solid #3b5077;
+  background:#182746;
+  font-size:11px;
+  font-weight:700;
+}
+
+.menu-button {
+  display:none;
+  padding:8px 12px;
+  color:white;
+  background:#182746;
+  border:1px solid var(--border);
+  border-radius:10px;
+}
+
+/* HERO */
+
+.hero {
+  min-height:680px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:55px;
+  padding-top:55px;
+  padding-bottom:70px;
+}
+
+.status {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 14px;
+  border-radius:50px;
+  border:1px solid #344a6d;
+  background:#14213b;
+  color:#c5d5f2;
+  font-size:11px;
+  font-weight:700;
+}
+
+.status-dot {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 5px #63d9b51c;
+  animation:pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {box-shadow:0 0 0 10px transparent;}
+}
+
+h1 {
+  font-size:clamp(43px,6vw,76px);
+  line-height:1.35;
+  font-weight:900;
+  letter-spacing:-2px;
+  margin:22px 0 17px;
+}
+
+.gradient {
+  background:linear-gradient(100deg,var(--cyan),var(--blue),var(--purple));
+  color:transparent;
+  background-clip:text;
+  -webkit-background-clip:text;
+}
+
+.hero-description {
+  color:var(--muted);
+  font-size:15px;
+  line-height:2.3;
+  max-width:570px;
+}
+
+.hero-sub {
+  color:#7383a3;
+  font-size:11px;
+  margin-top:12px;
+}
+
+.actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.btn {
+  min-height:49px;
+  padding:0 19px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  border-radius:14px;
+  font-size:11px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.btn:hover {
+  transform:translateY(-4px);
+}
+
+.btn-primary {
+  background:linear-gradient(110deg,#397cf4,#765be9);
+  box-shadow:0 12px 35px #416cf53d;
+  color:white;
+}
+
+.btn-secondary {
+  border:1px solid #394966;
+  background:#ffffff08;
+  color:#e5edff;
+}
+
+.trust {
+  display:flex;
+  flex-wrap:wrap;
+  gap:17px;
+  margin-top:30px;
+  font-size:10px;
+  color:#94a4c1;
+}
+
+.trust span {
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.trust b {
+  color:var(--green);
+}
+
+/* HERO VISUAL */
+
+.visual {
+  min-height:480px;
+  display:grid;
+  place-items:center;
+  position:relative;
+}
+
+.orbit {
+  position:absolute;
+  width:min(420px,95%);
+  aspect-ratio:1;
+  border:1px solid #9ab2ff25;
+  border-radius:50%;
+  box-shadow:0 0 100px #4569c51a;
+}
+
+.orbit::before,
+.orbit::after {
+  content:"";
+  position:absolute;
+  inset:30px;
+  border:1px solid #9ab2ff20;
+  border-radius:50%;
+}
+
+.orbit::after {
+  inset:65px;
+  border-style:dashed;
+  animation:rotate 45s linear infinite;
+}
+
+@keyframes rotate {
+  to {transform:rotate(360deg);}
+}
+
+.logo-box {
+  width:min(285px,70%);
+  aspect-ratio:1;
+  position:relative;
+  z-index:2;
+  display:grid;
+  place-items:center;
+  border-radius:36%;
+  background:linear-gradient(145deg,#243858,#111a31 70%,#20264a);
+  border:1px solid #ffffff24;
+  box-shadow:0 35px 90px #0008,inset 0 1px #ffffff20;
+  transform:rotate(-5deg);
+  animation:float 7s ease-in-out infinite;
+}
+
+.logo-box::before {
+  content:"";
+  position:absolute;
+  inset:13px;
+  border:1px solid #ffffff18;
+  border-radius:33%;
+}
+
+.logo-box svg {
+  width:75%;
+  filter:drop-shadow(0 15px 20px #0007);
+}
+
+@keyframes float {
+  50% {transform:translateY(-12px) rotate(-2deg);}
+}
+
+.float-card {
+  position:absolute;
+  z-index:4;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 15px;
+  border:1px solid #ffffff20;
+  border-radius:17px;
+  background:#14213beF;
+  box-shadow:0 15px 40px #0005;
+  font-size:10px;
+  color:#b5c3df;
+}
+
+.float-card strong {
+  display:block;
+  color:white;
+  font-size:11px;
+}
+
+.float-icon {
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#203c61;
+  color:#73dce4;
+  font-size:19px;
+}
+
+.float-one {
+  top:55px;
+  left:0;
+}
+
+.float-two {
+  bottom:55px;
+  right:0;
+}
+
+.float-two .float-icon {
+  background:#332b58;
+  color:#c1a7ff;
+}
+
+/* SECTION */
+
+section.content-section {
+  padding:85px 0;
+}
+
+.section-heading {
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 40px;
+}
+
+.kicker {
+  color:#83aaff;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+h2 {
+  font-size:clamp(27px,4vw,41px);
+  font-weight:900;
+  line-height:1.5;
+  margin:10px 0;
+}
+
+.section-heading p {
+  font-size:12px;
+  color:var(--muted);
+  line-height:2.2;
+}
+
+/* FEATURES */
+
+.features {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.feature {
+  padding:25px;
+  min-height:205px;
+  border:1px solid var(--border);
+  border-radius:22px;
+  background:linear-gradient(145deg,#17233dcc,#10192d);
+  transition:.3s;
+}
+
+.feature:hover {
+  transform:translateY(-6px);
+  border-color:#5573a9;
+  box-shadow:0 20px 45px #0003;
+}
+
+.feature-icon {
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:#203858;
+  color:#79dce5;
+  font-size:20px;
+  margin-bottom:17px;
+}
+
+.feature:nth-child(2n) .feature-icon {
+  background:#322b53;
+  color:#c3a8ff;
+}
+
+.feature h3 {
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.feature p {
+  color:#9cabc7;
+  font-size:11px;
+  line-height:2.2;
+}
+
+/* HOW IT WORKS */
+
+.how-section {
+  background:linear-gradient(180deg,transparent,#121b2c80,transparent);
+}
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:17px;
+}
+
+.step {
+  border:1px solid var(--border);
+  border-radius:22px;
+  background:#111a2f;
+  padding:26px;
+}
+
+.step-number {
+  font-size:11px;
+  color:#83aaff;
+  font-weight:900;
+}
+
+.step h3 {
+  font-size:15px;
+  margin:13px 0 8px;
+}
+
+.step p {
+  color:#9cabc7;
+  font-size:11px;
+  line-height:2.2;
+}
+
+/* CATEGORIES */
+
+.categories {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:11px;
+}
+
+.category {
+  padding:11px 17px;
+  border:1px solid #344564;
+  background:#14213a;
+  border-radius:50px;
+  font-size:11px;
+  color:#d8e3f8;
+}
+
+.category span {
+  color:#82cce5;
+  margin-left:6px;
+}
+
+/* SECURITY */
+
+.security-box {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  align-items:center;
+  gap:35px;
+  padding:35px;
+  border:1px solid #344767;
+  border-radius:28px;
+  background:radial-gradient(ellipse at 0 0,#27487555,transparent 60%),#111a2f;
+}
+
+.shield {
+  display:grid;
+  place-items:center;
+  min-height:220px;
+  font-size:100px;
+  color:#81e4d1;
+  text-shadow:0 15px 40px #0007;
+}
+
+.security-box p {
+  font-size:12px;
+  color:#a7b5cf;
+  line-height:2.3;
+}
+
+.security-list {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:20px;
+}
+
+.security-list span {
+  font-size:10px;
+  color:#d9e4f8;
+}
+
+.security-list b {
+  color:var(--green);
+  margin-left:5px;
+}
+
+/* FAQ */
+
+.faq-list {
+  max-width:800px;
+  margin:auto;
+  display:grid;
+  gap:12px;
+}
+
+details {
+  border:1px solid var(--border);
+  border-radius:17px;
+  background:#111a2f;
+  padding:0 19px;
+}
+
+summary {
+  cursor:pointer;
+  list-style:none;
+  padding:17px 0;
+  font-size:12px;
+  font-weight:700;
+}
+
+summary::-webkit-details-marker {
+  display:none;
+}
+
+summary::after {
+  content:"＋";
+  float:left;
+  color:#83aaff;
+  font-size:17px;
+}
+
+details[open] summary::after {
+  content:"−";
+}
+
+details p {
+  color:#a2b0ca;
+  font-size:11px;
+  line-height:2.2;
+  padding-bottom:17px;
+}
+
+/* CTA */
+
+.final-cta {
+  padding:50px 25px;
+  text-align:center;
+  border:1px solid #344a70;
+  border-radius:28px;
+  background:radial-gradient(ellipse at 50% 0,#31538a55,transparent 65%),#121d35;
+}
+
+.final-cta p {
+  max-width:550px;
+  margin:10px auto 0;
+  font-size:12px;
+  color:#a8b6d0;
+}
+
+.final-cta .actions {
+  justify-content:center;
+}
+
+/* FOOTER */
+
+footer {
+  border-top:1px solid #ffffff12;
+  padding:32px 0 20px;
+  background:#080c18;
+}
+
+.footer-top {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.footer-brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+  font-weight:900;
+}
+
+.footer-brand svg {
+  width:36px;
+}
+
+.socials {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.social {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 13px;
+  border:1px solid #2e3c58;
+  border-radius:12px;
+  color:#c7d3e9;
+  font-size:10px;
+  transition:.2s;
+}
+
+.social:hover {
+  background:#1b2b49;
+  transform:translateY(-3px);
+}
+
+.copyright {
+  direction:ltr;
+  text-align:center;
+  color:#7887a6;
+  font-size:10px;
+  padding-top:20px;
+  margin-top:23px;
+  border-top:1px solid #ffffff10;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+
+.reveal.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px) {
+  .hero {
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  .hero-copy {
+    text-align:center;
+  }
+
+  .hero-description {
+    margin:auto;
+  }
+
+  .actions,.trust {
+    justify-content:center;
+  }
+
+  .visual {
+    grid-row:1;
+    min-height:410px;
+  }
+
+  .features {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .security-box {
+    grid-template-columns:1fr;
+    gap:0;
+  }
+
+  .shield {
+    min-height:130px;
+    font-size:75px;
+  }
+}
+
+@media(max-width:600px) {
+  .container {
+    width:calc(100% - 30px);
+  }
+
+  header {
+    height:70px;
+  }
+
+  .brand {
+    font-size:18px;
+  }
+
+  .brand svg {
+    width:38px;
+  }
+
+  .nav-links {
+    display:none;
+    position:absolute;
+    top:70px;
+    right:15px;
+    left:15px;
+    background:#111a30;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:12px;
+    flex-direction:column;
+    gap:0;
+    align-items:stretch;
+  }
+
+  .nav-links.open {
+    display:flex;
+  }
+
+  .nav-links a {
+    padding:10px;
+  }
+
+  .nav-button {
+    display:none;
+  }
+
+  .menu-button {
+    display:block;
+  }
+
+  .hero {
+    padding-top:10px;
+    padding-bottom:45px;
+  }
+
+  .visual {
+    min-height:320px;
+  }
+
+  .orbit {
+    width:275px;
+  }
+
+  .logo-box {
+    width:195px;
+  }
+
+  .float-card {
+    padding:8px 10px;
+    font-size:8px;
+  }
+
+  .float-card strong {
+    font-size:9px;
+  }
+
+  .float-one {
+    top:35px;
+  }
+
+  .float-two {
+    bottom:35px;
+  }
+
+  h1 {
+    font-size:46px;
+    letter-spacing:-1px;
+  }
+
+  .hero-description {
+    font-size:12px;
+  }
+
+  .features,.steps {
+    grid-template-columns:1fr;
+  }
+
+  section.content-section {
+    padding:60px 0;
+  }
+
+  .feature {
+    min-height:0;
+    padding:21px;
+  }
+
+  .security-box {
+    padding:22px;
+  }
+
+  .security-list {
+    grid-template-columns:1fr;
+  }
+
+  .footer-top {
+    flex-direction:column;
+  }
+
+  .socials {
+    justify-content:center;
+  }
+
+  .copyright {
+    font-size:9px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+
+  .reveal {
+    opacity:1;
+    transform:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs>
+          <linearGradient id="brandGradient">
+            <stop stop-color="#4bd8df"/>
+            <stop offset=".55" stop-color="#5b8cff"/>
+            <stop offset="1" stop-color="#a58aff"/>
+          </linearGradient>
+        </defs>
+        <path d="M18 18Q18 9 29 9H71Q91 9 91 29V57Q91 76 72 76H52L31 93Q24 98 24 87V76Q9 72 9 56V29Q9 18 18 18Z" fill="url(#brandGradient)"/>
+        <circle cx="34" cy="43" r="5" fill="white"/>
+        <circle cx="50" cy="43" r="5" fill="white"/>
+        <circle cx="66" cy="43" r="5" fill="white"/>
+      </svg>
+      <span>روراست<small>ROORAST</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">روراست چیست؟</a>
+      <a href="#features">قابلیت‌ها</a>
+      <a href="#how">نحوه کار</a>
+      <a href="#security">امنیت</a>
+      <a href="#faq">سؤالات متداول</a>
+    </nav>
+
+    <a class="nav-button" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
+      دنبال‌کردن اخبار ↗
+    </a>
+
+    <button class="menu-button" id="menuButton" aria-label="باز کردن منو" aria-expanded="false">
+      ☰
+    </button>
+
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+
+<section class="container hero">
+
+  <div class="hero-copy reveal">
+
+    <div class="status">
+      <span class="status-dot"></span>
+      روراست در حال آماده‌سازی است
+    </div>
+
+    <h1>
+      بعضی حرف‌ها<br>
+      فقط باید <span class="gradient">گفته شوند.</span>
+    </h1>
+
+    <p class="hero-description">
+      روراست فضایی برای دریافت پیام‌های ناشناس و بازخوردهای صادقانه است؛
+      از یک تشکر ساده و تعریف دوستانه تا پیشنهاد و انتقادی که شاید
+      گفتنش رو‌در‌رو آسان نباشد.
+    </p>
+
+    <p class="hero-sub">
+      یک تجربه تازه با تمرکز بر احترام، انتخاب و مسئولیت‌پذیری.
+    </p>
+
+    <div class="actions">
+
+      <a class="btn btn-primary" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
+        همراه ما در تلگرام ↗
+      </a>
+
+      <a class="btn btn-secondary" href="https://www.instagram.com/RRAstApp/" target="_blank" rel="noopener noreferrer">
+        صفحه اینستاگرام ↗
+      </a>
+
+    </div>
+
+    <div class="trust">
+      <span><b>✓</b> احترام به حریم خصوصی</span>
+      <span><b>✓</b> بازخورد سازنده</span>
+      <span><b>✓</b> تجربه ساده</span>
+    </div>
+
+  </div>
+
+  <div class="visual reveal">
+
+    <div class="orbit"></div>
+
+    <div class="float-card float-one">
+      <span class="float-icon">✉</span>
+      <span>
+        <strong>حرفی برای گفتن داری؟</strong>
+        گاهی نوشتن آسان‌تر است.
+      </span>
+    </div>
+
+    <div class="float-card float-two">
+      <span class="float-icon">♡</span>
+      <span>
+        <strong>صادقانه و محترمانه</strong>
+        حرفی که ارزش شنیدن دارد.
+      </span>
+    </div>
+
+    <div class="logo-box">
+      <svg viewBox="0 0 160 160" role="img" aria-label="لوگوی روراست">
+        <defs>
+          <linearGradient id="logoGradient">
+            <stop stop-color="#4bd8df"/>
+            <stop offset=".48" stop-color="#5b8cff"/>
+            <stop offset="1" stop-color="#a58aff"/>
+          </linearGradient>
+        </defs>
+        <path d="M27 20Q27 9 41 9H119Q150 9 150 40V94Q150 125 119 125H83L43 151Q30 160 30 143V124Q9 116 9 93V40Q9 20 27 20Z" fill="url(#logoGradient)"/>
+        <path d="M32 29Q32 21 43 21H115Q138 21 138 43V91Q138 113 115 113H78L43 138Q39 141 39 134V113Q21 108 21 90V43Q21 29 32 29Z" fill="none" stroke="white" stroke-opacity=".3" stroke-width="2"/>
+        <circle cx="48" cy="67" r="8" fill="white"/>
+        <circle cx="79" cy="67" r="8" fill="white"/>
+        <circle cx="110" cy="67" r="8" fill="white"/>
+      </svg>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="content-section" id="about">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="kicker">ABOUT ROORAST</span>
+      <h2>روراست دقیقاً چیست؟</h2>
+      <p>
+        قرار نیست یک شبکه اجتماعی دیگر یا یک پیام‌رسان شلوغ باشیم.
+        روراست برای ساده‌تر کردن یک کار مشخص ساخته می‌شود:
+        رساندن حرف‌هایی که گفتنشان همیشه راحت نیست.
+      </p>
+    </div>
+
+    <div class="features">
+
+      <article class="feature reveal">
+        <div class="feature-icon">✉</div>
+        <h3>پیام‌های ناشناس</h3>
+        <p>امکان ارسال پیام بدون نمایش هویت فرستنده به دریافت‌کننده، با رعایت محدودیت‌ها و سازوکارهای امنیتی سرویس.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">♡</div>
+        <h3>حرف‌های خوب</h3>
+        <p>برای تشکر، تبریک، تعریف و بیان احساسات مثبت؛ گاهی یک جمله کوتاه حال کسی را بهتر می‌کند.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">⌁</div>
+        <h3>بازخورد سازنده</h3>
+        <p>پیشنهاد و انتقاد می‌تواند مفید باشد؛ وقتی هدفش کمک به بهتر شدن باشد، نه تحقیر کردن.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">✎</div>
+        <h3>پیام با متن دلخواه</h3>
+        <p>برای زمانی که پیام آماده پاسخ‌گوی منظورت نیست و می‌خواهی حرفت را با بیان خودت بنویسی.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">◎</div>
+        <h3>دریافت آسان</h3>
+        <p>ارسال و دریافت پیام از مسیرهای پشتیبانی‌شده با تمرکز بر تجربه‌ای ساده و قابل‌فهم.</p>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">⚑</div>
+        <h3>گزارش و رسیدگی</h3>
+        <p>برای پیام‌های آزاردهنده یا سوءاستفاده، مسیر گزارش و بررسی در طراحی سرویس دیده شده است.</p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HOW -->
+
+<section class="content-section how-section" id="how">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="kicker">HOW IT WORKS</span>
+      <h2>نحوه کار روراست</h2>
+      <p>یک مسیر ساده برای رساندن حرف‌ها به مقصد.</p>
+    </div>
+
+    <div class="steps">
+
+      <article class="step reveal">
+        <span class="step-number">۰۱ / دریافت‌کننده</span>
+        <h3>صفحه دریافت پیام</h3>
+        <p>فرد مسیر اختصاصی دریافت پیام خود را در اختیار دیگران قرار می‌دهد.</p>
+      </article>
+
+      <article class="step reveal">
+        <span class="step-number">۰۲ / فرستنده</span>
+        <h3>انتخاب موضوع و نوشتن</h3>
+        <p>فرستنده موضوع مناسب را انتخاب می‌کند و پیام خود را مطابق قوانین سرویس می‌نویسد.</p>
+      </article>
+
+      <article class="step reveal">
+        <span class="step-number">۰۳ / تحویل پیام</span>
+        <h3>بررسی و ارسال</h3>
+        <p>پیام از مسیرهای کنترلی و ضدسوءاستفاده عبور می‌کند و به مقصد می‌رسد.</p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="content-section" id="features">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="kicker">MESSAGE CATEGORIES</span>
+      <h2>برای چه حرف‌هایی؟</h2>
+      <p>موضوعات مختلف برای بیان بهتر منظورت.</p>
+    </div>
+
+    <div class="categories reveal">
+
+      <span class="category"><span>♡</span> تعریف و تمجید</span>
+      <span class="category"><span>✦</span> تبریک</span>
+      <span class="category"><span>♥</span> تشکر</span>
+      <span class="category"><span>☼</span> بیان احساسات</span>
+      <span class="category"><span>⌁</span> پیشنهاد</span>
+      <span class="category"><span>✎</span> انتقاد سازنده</span>
+      <span class="category"><span>◈</span> انتقاد</span>
+      <span class="category"><span>＋</span> پیام دلخواه</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SECURITY -->
+
+<section class="content-section" id="security">
+
+  <div class="container">
+
+    <div class="security-box reveal">
+
+      <div class="shield">♢</div>
+
+      <div>
+
+        <span class="kicker">PRIVACY & SAFETY</span>
+
+        <h2>ناشناس بودن، بدون مسئولیت‌پذیری نیست.</h2>
+
+        <p>
+          ناشناس بودن برای دریافت‌کننده به معنی مجاز بودن هر نوع محتوا نیست.
+          روراست با رویکردی مرحله‌ای به احراز فرستنده، فیلتر محتوای نامناسب
+          و رسیدگی به گزارش‌ها طراحی می‌شود.
+          جزئیات اجرایی و سیاست‌های حریم خصوصی پیش از راه‌اندازی شفاف‌سازی خواهند شد.
+        </p>
+
+        <div class="security-list">
+          <span><b>✓</b> توجه به حریم خصوصی</span>
+          <span><b>✓</b> کنترل محتوای آسیب‌زا</span>
+          <span><b>✓</b> گزارش تخلف</span>
+          <span><b>✓</b> مقابله با سوءاستفاده</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="content-section" id="faq">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="kicker">FAQ</span>
+      <h2>سؤالات متداول</h2>
+      <p>چند پاسخ کوتاه درباره روراست.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="reveal">
+        <summary>آیا روراست یک پیام‌رسان است؟</summary>
+        <p>خیر. روراست برای دریافت پیام‌های ناشناس و بازخورد طراحی شده و قرار نیست جای پیام‌رسان‌های معمول را بگیرد.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>آیا هویت فرستنده کاملاً غیرقابل‌شناسایی است؟</summary>
+        <p>ناشناس بودن در تجربه دریافت‌کننده با ناشناس بودن مطلق در سطح فنی یا حقوقی یکسان نیست. برای جلوگیری از سوءاستفاده ممکن است بررسی‌های امنیتی و احراز مرحله‌ای انجام شود.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>چه پیام‌هایی قابل ارسال هستند؟</summary>
+        <p>تبریک، تشکر، تعریف، بیان احساسات، پیشنهاد، انتقاد سازنده، انتقاد و پیام دلخواه از موضوعات در نظر گرفته‌شده هستند.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>اگر پیام آزاردهنده دریافت کنم چه؟</summary>
+        <p>قابلیت گزارش پیام و رسیدگی به موارد سوءاستفاده در طراحی روراست پیش‌بینی شده است.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>روراست چه زمانی منتشر می‌شود؟</summary>
+        <p>زمان دقیق انتشار هنوز اعلام نشده است. اخبار رسمی از طریق شبکه‌های اجتماعی روراست منتشر خواهد شد.</p>
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FINAL CTA -->
+
+<section class="container content-section">
+
+  <div class="final-cta reveal">
+
+    <span class="kicker">COMING SOON</span>
+
+    <h2>شروعش نزدیک است.</h2>
+
+    <p>
+      برای اطلاع از خبرهای انتشار، معرفی قابلیت‌ها و زمان شروع فعالیت،
+      روراست را در شبکه‌های اجتماعی دنبال کن.
+    </p>
+
+    <div class="actions">
+
+      <a class="btn btn-primary" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
+        تلگرام ↗
+      </a>
+
+      <a class="btn btn-secondary" href="https://www.instagram.com/RRAstApp/" target="_blank" rel="noopener noreferrer">
+        اینستاگرام ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M18 18Q18 9 29 9H71Q91 9 91 29V57Q91 76 72 76H52L31 93Q24 98 24 87V76Q9 72 9 56V29Q9 18 18 18Z" fill="#5b8cff"/>
+          <circle cx="34" cy="43" r="5" fill="white"/>
+          <circle cx="50" cy="43" r="5" fill="white"/>
+          <circle cx="66" cy="43" r="5" fill="white"/>
+        </svg>
+
+        <span>روراست</span>
+
+      </div>
+
+      <div class="socials">
+
+        <a class="social" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
+          تلگرام ↗
+        </a>
+
+        <a class="social" href="https://www.instagram.com/RRAstApp/" target="_blank" rel="noopener noreferrer">
+          اینستاگرام ↗
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © Argneshin · Coded by AsliCode
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+/* Mobile navigation */
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+menuButton.addEventListener("click", function() {
+  const opened = navLinks.classList.toggle("open");
+
+  menuButton.setAttribute("aria-expanded", String(opened));
+  menuButton.textContent = opened ? "✕" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navLinks.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.textContent = "☰";
+  });
+});
+
+/* Reveal animations */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+
+  const observer = new IntersectionObserver(function(entries) {
+
+    entries.forEach(function(entry) {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+
+    });
+
+  }, {
+    threshold: 0.08
+  });
+
+  revealElements.forEach(function(element) {
+    observer.observe(element);
+  });
+
+} else {
+
+  revealElements.forEach(function(element) {
+    element.classList.add("show");
+  });
+
+}
+</script>
+
+</body>
+</html>
