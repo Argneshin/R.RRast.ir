@@ -1,18 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0a1020">
-<meta name="description" content="روراست؛ فضایی برای دریافت پیام‌های ناشناس، حرف‌های نگفته و بازخوردهای صادقانه.">
+<meta name="color-scheme" content="dark">
+
+<title>روراست | به‌زودی — پیام ناشناس، چت ناشناس، آزمون شناخت و ابزارهای سبک وب</title>
+<meta name="description" content="روراست (RooRast) پلتفرم چندمنظوره برای پیام ناشناس با بررسی هوشمند محتوا، چت ناشناس، اشتراک‌گذاری لینک و محتوای کوتاه، آزمون «چقدر من را می‌شناسی؟» و ابزارهای سبک وب است. آدرس رسمی RRast.ir — ساخته‌شده توسط تیم ارگنشین.">
+<meta name="keywords" content="روراست, RooRast, پیام ناشناس, چت ناشناس, آزمون شناخت, لینک بایو, ارگنشین, Argneshin, AsliCode, RRast.ir, R.RRast.ir">
+<meta name="author" content="Argneshin — Coded by AsliCode">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://RRast.ir/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RooRast">
+<meta property="og:locale" content="fa_IR">
 <meta property="og:title" content="روراست | بعضی حرف‌ها باید گفته شوند">
-<meta property="og:description" content="تجربه‌ای تازه برای دریافت پیام‌های ناشناس و بازخوردهای صادقانه.">
-<title>روراست | به‌زودی</title>
+<meta property="og:description" content="پیام ناشناس با بررسی هوشمند محتوا، چت ناشناس، آزمون شناخت، اشتراک‌گذاری لینک و محتوای کوتاه، حمایت از توسعه‌دهنده و ابزارهای سبک وب — همه در یک پلتفرم.">
+<meta property="og:url" content="https://RRast.ir/">
+<meta property="og:image" content="https://RRast.ir/og-image.jpg">
+<meta property="og:image:alt" content="لوگوی روراست">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="روراست | به‌زودی">
+<meta name="twitter:description" content="پلتفرم چندمنظوره پیام ناشناس، چت ناشناس، آزمون شناخت و ابزارهای سبک وب. آدرس رسمی: RRast.ir">
+<meta name="twitter:image" content="https://RRast.ir/og-image.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Structured Data: Organization + WebSite + WebApplication + FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://RRast.ir/#organization",
+      "name": "Argneshin",
+      "alternateName": "ارگنشین",
+      "url": "https://t.me/Argneshin",
+      "sameAs": [
+        "https://t.me/Argneshin",
+        "https://t.me/RRastApp",
+        "https://www.instagram.com/RRastApp/"
+      ],
+      "founder": { "@type": "Person", "name": "AsliCode", "url": "https://t.me/AsliCode" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://RRast.ir/#website",
+      "url": "https://RRast.ir/",
+      "name": "RooRast",
+      "alternateName": ["روراست", "RRast"],
+      "inLanguage": "fa-IR",
+      "publisher": { "@id": "https://RRast.ir/#organization" }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://RRast.ir/#app",
+      "name": "RooRast",
+      "alternateName": "روراست",
+      "url": "https://RRast.ir/",
+      "sameAs": ["https://R.RRast.ir/"],
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "fa-IR",
+      "description": "روراست یک پلتفرم چندمنظوره شامل پیام ناشناس با بررسی خودکار محتوا، چت ناشناس، اشتراک‌گذاری لینک و محتوای کوتاه، آزمون «چقدر من را می‌شناسی؟»، حمایت از توسعه‌دهنده و ابزارهای سبک وب است.",
+      "author": { "@id": "https://RRast.ir/#organization" },
+      "creator": { "@type": "Person", "name": "AsliCode", "url": "https://t.me/AsliCode" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IRR" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://RRast.ir/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "روراست چیست؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "روراست یک پلتفرم چندمنظوره برای پیام ناشناس با بررسی هوشمند محتوا، چت ناشناس، اشتراک‌گذاری لینک و محتوای کوتاه، آزمون «چقدر من را می‌شناسی؟»، حمایت از توسعه‌دهنده و ابزارهای سبک وب است." }
+        },
+        {
+          "@type": "Question",
+          "name": "آدرس رسمی روراست کدام است؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "آدرس رسمی RRast.ir و نسخه فعلی R.RRast.ir است." }
+        },
+        {
+          "@type": "Question",
+          "name": "آیا متن‌های ناشناس بررسی می‌شوند؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "بله. تمامی متن‌های ارسالی در بخش‌های پیام ناشناس و چت ناشناس پیش از انتشار توسط چند ایجنت خودکار از نظر نقض قوانین، توهین، تهدید و هرزنامه بررسی می‌شوند." }
+        },
+        {
+          "@type": "Question",
+          "name": "چگونه از انتشار روراست باخبر شوم؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "از طریق کانال تلگرام @Argneshin و آیدی رسمی @RRastApp در تلگرام و اینستاگرام." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 <style>
 :root {
@@ -26,17 +117,11 @@
   --cyan:#4bd8df;
   --purple:#a68aff;
   --green:#63d9b5;
+  --gold:#f7c76b;
 }
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html {
-  scroll-behavior:smooth;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 
 body {
   font-family:Vazirmatn,Tahoma,sans-serif;
@@ -58,27 +143,13 @@ body::before {
     radial-gradient(ellipse at 50% 100%,#193b6730,transparent 50%);
 }
 
-a {
-  text-decoration:none;
-  color:inherit;
-}
+a { text-decoration:none; color:inherit; }
+button { font-family:inherit; }
 
-button {
-  font-family:inherit;
-}
-
-.container {
-  width:min(1160px,calc(100% - 40px));
-  margin:auto;
-}
-
-header,main,footer {
-  position:relative;
-  z-index:1;
-}
+.container { width:min(1160px,calc(100% - 40px)); margin:auto; }
+header,main,footer { position:relative; z-index:1; }
 
 /* HEADER */
-
 header {
   height:82px;
   border-bottom:1px solid #ffffff10;
@@ -105,10 +176,7 @@ header {
   font-weight:900;
 }
 
-.brand svg {
-  width:43px;
-  height:43px;
-}
+.brand svg { width:43px; height:43px; }
 
 .brand small {
   display:block;
@@ -121,19 +189,14 @@ header {
 
 .nav-links {
   display:flex;
-  gap:25px;
+  gap:22px;
   align-items:center;
   color:#aab7d0;
   font-size:12px;
 }
 
-.nav-links a {
-  transition:.25s;
-}
-
-.nav-links a:hover {
-  color:white;
-}
+.nav-links a { transition:.25s; }
+.nav-links a:hover { color:white; }
 
 .nav-button {
   padding:10px 17px;
@@ -142,7 +205,10 @@ header {
   background:#182746;
   font-size:11px;
   font-weight:700;
+  transition:.25s;
 }
+
+.nav-button:hover { background:#203858; }
 
 .menu-button {
   display:none;
@@ -151,10 +217,10 @@ header {
   background:#182746;
   border:1px solid var(--border);
   border-radius:10px;
+  cursor:pointer;
 }
 
 /* HERO */
-
 .hero {
   min-height:680px;
   display:grid;
@@ -187,13 +253,11 @@ header {
   animation:pulse 2s infinite;
 }
 
-@keyframes pulse {
-  50% {box-shadow:0 0 0 10px transparent;}
-}
+@keyframes pulse { 50% { box-shadow:0 0 0 10px transparent; } }
 
 h1 {
-  font-size:clamp(43px,6vw,76px);
-  line-height:1.35;
+  font-size:clamp(40px,5.5vw,72px);
+  line-height:1.32;
   font-weight:900;
   letter-spacing:-2px;
   margin:22px 0 17px;
@@ -210,7 +274,7 @@ h1 {
   color:var(--muted);
   font-size:15px;
   line-height:2.3;
-  max-width:570px;
+  max-width:600px;
 }
 
 .hero-sub {
@@ -219,11 +283,26 @@ h1 {
   margin-top:12px;
 }
 
+.answer-first {
+  background:#101a2f;
+  border:1px solid #2a3d5e;
+  border-right:3px solid var(--cyan);
+  border-radius:14px;
+  padding:14px 18px;
+  margin-top:20px;
+  font-size:12px;
+  color:#c4d2ea;
+  line-height:2.1;
+  max-width:600px;
+}
+
+.answer-first b { color:#e8efff; }
+
 .actions {
   display:flex;
   flex-wrap:wrap;
   gap:12px;
-  margin-top:28px;
+  margin-top:26px;
 }
 
 .btn {
@@ -237,11 +316,11 @@ h1 {
   font-size:11px;
   font-weight:800;
   transition:.25s;
+  cursor:pointer;
+  border:none;
 }
 
-.btn:hover {
-  transform:translateY(-4px);
-}
+.btn:hover { transform:translateY(-4px); }
 
 .btn-primary {
   background:linear-gradient(110deg,#397cf4,#765be9);
@@ -259,23 +338,15 @@ h1 {
   display:flex;
   flex-wrap:wrap;
   gap:17px;
-  margin-top:30px;
+  margin-top:28px;
   font-size:10px;
   color:#94a4c1;
 }
 
-.trust span {
-  display:flex;
-  align-items:center;
-  gap:7px;
-}
-
-.trust b {
-  color:var(--green);
-}
+.trust span { display:flex; align-items:center; gap:7px; }
+.trust b { color:var(--green); }
 
 /* HERO VISUAL */
-
 .visual {
   min-height:480px;
   display:grid;
@@ -292,8 +363,7 @@ h1 {
   box-shadow:0 0 100px #4569c51a;
 }
 
-.orbit::before,
-.orbit::after {
+.orbit::before, .orbit::after {
   content:"";
   position:absolute;
   inset:30px;
@@ -307,9 +377,7 @@ h1 {
   animation:rotate 45s linear infinite;
 }
 
-@keyframes rotate {
-  to {transform:rotate(360deg);}
-}
+@keyframes rotate { to { transform:rotate(360deg); } }
 
 .logo-box {
   width:min(285px,70%);
@@ -334,14 +402,9 @@ h1 {
   border-radius:33%;
 }
 
-.logo-box svg {
-  width:75%;
-  filter:drop-shadow(0 15px 20px #0007);
-}
+.logo-box svg { width:75%; filter:drop-shadow(0 15px 20px #0007); }
 
-@keyframes float {
-  50% {transform:translateY(-12px) rotate(-2deg);}
-}
+@keyframes float { 50% { transform:translateY(-12px) rotate(-2deg); } }
 
 .float-card {
   position:absolute;
@@ -356,13 +419,10 @@ h1 {
   box-shadow:0 15px 40px #0005;
   font-size:10px;
   color:#b5c3df;
+  animation:float 6s ease-in-out infinite;
 }
 
-.float-card strong {
-  display:block;
-  color:white;
-  font-size:11px;
-}
+.float-card strong { display:block; color:white; font-size:11px; }
 
 .float-icon {
   width:36px;
@@ -375,30 +435,16 @@ h1 {
   font-size:19px;
 }
 
-.float-one {
-  top:55px;
-  left:0;
-}
-
-.float-two {
-  bottom:55px;
-  right:0;
-}
-
-.float-two .float-icon {
-  background:#332b58;
-  color:#c1a7ff;
-}
+.float-one { top:55px; left:0; animation-delay:-2s; }
+.float-two { bottom:55px; right:0; animation-delay:-4s; }
+.float-two .float-icon { background:#332b58; color:#c1a7ff; }
 
 /* SECTION */
-
-section.content-section {
-  padding:85px 0;
-}
+section.content-section { padding:85px 0; }
 
 .section-heading {
   text-align:center;
-  max-width:700px;
+  max-width:750px;
   margin:0 auto 40px;
 }
 
@@ -423,7 +469,6 @@ h2 {
 }
 
 /* FEATURES */
-
 .features {
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -432,11 +477,22 @@ h2 {
 
 .feature {
   padding:25px;
-  min-height:205px;
+  min-height:220px;
   border:1px solid var(--border);
   border-radius:22px;
   background:linear-gradient(145deg,#17233dcc,#10192d);
   transition:.3s;
+  position:relative;
+  overflow:hidden;
+}
+
+.feature::before {
+  content:"";
+  position:absolute;
+  top:0; right:0;
+  width:100px; height:100px;
+  background:radial-gradient(circle at top right, #5b8cff22, transparent 70%);
+  pointer-events:none;
 }
 
 .feature:hover {
@@ -457,27 +513,25 @@ h2 {
   margin-bottom:17px;
 }
 
-.feature:nth-child(2n) .feature-icon {
-  background:#322b53;
-  color:#c3a8ff;
-}
+.feature:nth-child(2n) .feature-icon { background:#322b53; color:#c3a8ff; }
+.feature:nth-child(3n) .feature-icon { background:#2a4438; color:#8fe6c2; }
 
-.feature h3 {
-  font-size:14px;
-  margin-bottom:8px;
-}
+.feature h3 { font-size:14px; margin-bottom:8px; }
+.feature p { color:#9cabc7; font-size:11px; line-height:2.2; }
 
-.feature p {
-  color:#9cabc7;
-  font-size:11px;
-  line-height:2.2;
+.feature .badge {
+  display:inline-block;
+  margin-top:10px;
+  padding:3px 9px;
+  font-size:9px;
+  font-weight:700;
+  border-radius:20px;
+  background:#203858;
+  color:#8fc3ff;
 }
 
 /* HOW IT WORKS */
-
-.how-section {
-  background:linear-gradient(180deg,transparent,#121b2c80,transparent);
-}
+.how-section { background:linear-gradient(180deg,transparent,#121b2c80,transparent); }
 
 .steps {
   display:grid;
@@ -490,6 +544,7 @@ h2 {
   border-radius:22px;
   background:#111a2f;
   padding:26px;
+  position:relative;
 }
 
 .step-number {
@@ -498,19 +553,10 @@ h2 {
   font-weight:900;
 }
 
-.step h3 {
-  font-size:15px;
-  margin:13px 0 8px;
-}
-
-.step p {
-  color:#9cabc7;
-  font-size:11px;
-  line-height:2.2;
-}
+.step h3 { font-size:15px; margin:13px 0 8px; }
+.step p { color:#9cabc7; font-size:11px; line-height:2.2; }
 
 /* CATEGORIES */
-
 .categories {
   display:flex;
   justify-content:center;
@@ -525,15 +571,13 @@ h2 {
   border-radius:50px;
   font-size:11px;
   color:#d8e3f8;
+  transition:.25s;
 }
 
-.category span {
-  color:#82cce5;
-  margin-left:6px;
-}
+.category:hover { border-color:#5b8cff; transform:translateY(-3px); }
+.category span { color:#82cce5; margin-left:6px; }
 
 /* SECURITY */
-
 .security-box {
   display:grid;
   grid-template-columns:.8fr 1.2fr;
@@ -554,11 +598,7 @@ h2 {
   text-shadow:0 15px 40px #0007;
 }
 
-.security-box p {
-  font-size:12px;
-  color:#a7b5cf;
-  line-height:2.3;
-}
+.security-box p { font-size:12px; color:#a7b5cf; line-height:2.3; }
 
 .security-list {
   display:grid;
@@ -567,31 +607,21 @@ h2 {
   margin-top:20px;
 }
 
-.security-list span {
-  font-size:10px;
-  color:#d9e4f8;
-}
-
-.security-list b {
-  color:var(--green);
-  margin-left:5px;
-}
+.security-list span { font-size:10px; color:#d9e4f8; }
+.security-list b { color:var(--green); margin-left:5px; }
 
 /* FAQ */
-
-.faq-list {
-  max-width:800px;
-  margin:auto;
-  display:grid;
-  gap:12px;
-}
+.faq-list { max-width:820px; margin:auto; display:grid; gap:12px; }
 
 details {
   border:1px solid var(--border);
   border-radius:17px;
   background:#111a2f;
   padding:0 19px;
+  transition:.25s;
 }
+
+details[open] { border-color:#3f5a8b; }
 
 summary {
   cursor:pointer;
@@ -601,30 +631,43 @@ summary {
   font-weight:700;
 }
 
-summary::-webkit-details-marker {
-  display:none;
-}
+summary::-webkit-details-marker { display:none; }
 
 summary::after {
   content:"＋";
   float:left;
   color:#83aaff;
   font-size:17px;
+  font-weight:400;
 }
 
-details[open] summary::after {
-  content:"−";
+details[open] summary::after { content:"−"; }
+details p { color:#a2b0ca; font-size:11px; line-height:2.2; padding-bottom:17px; }
+
+/* FACTS TABLE (GEO) */
+.facts {
+  max-width:820px;
+  margin:0 auto;
+  border:1px solid var(--border);
+  border-radius:18px;
+  overflow:hidden;
+  background:#111a2f;
 }
 
-details p {
-  color:#a2b0ca;
-  font-size:11px;
-  line-height:2.2;
-  padding-bottom:17px;
+.facts table { width:100%; border-collapse:collapse; }
+
+.facts th, .facts td {
+  text-align:right;
+  padding:13px 18px;
+  font-size:12px;
+  border-bottom:1px solid #22314c;
 }
+
+.facts th { color:#a8b6d0; font-weight:700; width:45%; background:#0f1830; }
+.facts td { color:#e5edff; }
+.facts tr:last-child th, .facts tr:last-child td { border-bottom:none; }
 
 /* CTA */
-
 .final-cta {
   padding:50px 25px;
   text-align:center;
@@ -633,19 +676,10 @@ details p {
   background:radial-gradient(ellipse at 50% 0,#31538a55,transparent 65%),#121d35;
 }
 
-.final-cta p {
-  max-width:550px;
-  margin:10px auto 0;
-  font-size:12px;
-  color:#a8b6d0;
-}
-
-.final-cta .actions {
-  justify-content:center;
-}
+.final-cta p { max-width:560px; margin:10px auto 0; font-size:12px; color:#a8b6d0; }
+.final-cta .actions { justify-content:center; }
 
 /* FOOTER */
-
 footer {
   border-top:1px solid #ffffff12;
   padding:32px 0 20px;
@@ -657,6 +691,7 @@ footer {
   align-items:center;
   justify-content:space-between;
   gap:20px;
+  flex-wrap:wrap;
 }
 
 .footer-brand {
@@ -667,15 +702,9 @@ footer {
   font-weight:900;
 }
 
-.footer-brand svg {
-  width:36px;
-}
+.footer-brand svg { width:36px; }
 
-.socials {
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
+.socials { display:flex; gap:10px; flex-wrap:wrap; }
 
 .social {
   display:inline-flex;
@@ -689,97 +718,62 @@ footer {
   transition:.2s;
 }
 
-.social:hover {
-  background:#1b2b49;
-  transform:translateY(-3px);
+.social:hover { background:#1b2b49; transform:translateY(-3px); }
+
+.footer-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  font-size:10px;
+  color:#8795b1;
+  margin-top:22px;
+  padding-top:20px;
+  border-top:1px solid #ffffff10;
 }
+
+.footer-links a { transition:.2s; }
+.footer-links a:hover { color:#c7d3e9; }
 
 .copyright {
   direction:ltr;
   text-align:center;
   color:#7887a6;
   font-size:10px;
-  padding-top:20px;
-  margin-top:23px;
+  padding-top:18px;
+  margin-top:18px;
   border-top:1px solid #ffffff10;
 }
 
 /* ANIMATIONS */
-
 .reveal {
   opacity:0;
   transform:translateY(20px);
   transition:opacity .7s ease,transform .7s ease;
 }
 
-.reveal.show {
-  opacity:1;
-  transform:translateY(0);
-}
+.reveal.show { opacity:1; transform:translateY(0); }
 
 /* RESPONSIVE */
-
 @media(max-width:850px) {
-  .hero {
-    grid-template-columns:1fr;
-    gap:0;
-  }
-
-  .hero-copy {
-    text-align:center;
-  }
-
-  .hero-description {
-    margin:auto;
-  }
-
-  .actions,.trust {
-    justify-content:center;
-  }
-
-  .visual {
-    grid-row:1;
-    min-height:410px;
-  }
-
-  .features {
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .security-box {
-    grid-template-columns:1fr;
-    gap:0;
-  }
-
-  .shield {
-    min-height:130px;
-    font-size:75px;
-  }
+  .hero { grid-template-columns:1fr; gap:0; }
+  .hero-copy { text-align:center; }
+  .hero-description, .answer-first { margin:auto; }
+  .actions, .trust { justify-content:center; }
+  .visual { grid-row:1; min-height:410px; }
+  .features { grid-template-columns:repeat(2,1fr); }
+  .security-box { grid-template-columns:1fr; gap:0; }
+  .shield { min-height:130px; font-size:75px; }
 }
 
 @media(max-width:600px) {
-  .container {
-    width:calc(100% - 30px);
-  }
-
-  header {
-    height:70px;
-  }
-
-  .brand {
-    font-size:18px;
-  }
-
-  .brand svg {
-    width:38px;
-  }
-
+  .container { width:calc(100% - 30px); }
+  header { height:70px; }
+  .brand { font-size:18px; }
+  .brand svg { width:38px; }
   .nav-links {
     display:none;
     position:absolute;
-    top:70px;
-    right:15px;
-    left:15px;
+    top:70px; right:15px; left:15px;
     background:#111a30;
     border:1px solid var(--border);
     border-radius:16px;
@@ -788,98 +782,29 @@ footer {
     gap:0;
     align-items:stretch;
   }
-
-  .nav-links.open {
-    display:flex;
-  }
-
-  .nav-links a {
-    padding:10px;
-  }
-
-  .nav-button {
-    display:none;
-  }
-
-  .menu-button {
-    display:block;
-  }
-
-  .hero {
-    padding-top:10px;
-    padding-bottom:45px;
-  }
-
-  .visual {
-    min-height:320px;
-  }
-
-  .orbit {
-    width:275px;
-  }
-
-  .logo-box {
-    width:195px;
-  }
-
-  .float-card {
-    padding:8px 10px;
-    font-size:8px;
-  }
-
-  .float-card strong {
-    font-size:9px;
-  }
-
-  .float-one {
-    top:35px;
-  }
-
-  .float-two {
-    bottom:35px;
-  }
-
-  h1 {
-    font-size:46px;
-    letter-spacing:-1px;
-  }
-
-  .hero-description {
-    font-size:12px;
-  }
-
-  .features,.steps {
-    grid-template-columns:1fr;
-  }
-
-  section.content-section {
-    padding:60px 0;
-  }
-
-  .feature {
-    min-height:0;
-    padding:21px;
-  }
-
-  .security-box {
-    padding:22px;
-  }
-
-  .security-list {
-    grid-template-columns:1fr;
-  }
-
-  .footer-top {
-    flex-direction:column;
-  }
-
-  .socials {
-    justify-content:center;
-  }
-
-  .copyright {
-    font-size:9px;
-  }
+  .nav-links.open { display:flex; }
+  .nav-links a { padding:10px; }
+  .nav-button { display:none; }
+  .menu-button { display:block; }
+  .hero { padding-top:10px; padding-bottom:45px; }
+  .visual { min-height:320px; }
+  .orbit { width:275px; }
+  .logo-box { width:195px; }
+  .float-card { padding:8px 10px; font-size:8px; }
+  .float-card strong { font-size:9px; }
+  .float-one { top:35px; }
+  .float-two { bottom:35px; }
+  h1 { font-size:42px; letter-spacing:-1px; }
+  .hero-description { font-size:12px; }
+  .features, .steps { grid-template-columns:1fr; }
+  section.content-section { padding:60px 0; }
+  .feature { min-height:0; padding:21px; }
+  .security-box { padding:22px; }
+  .security-list { grid-template-columns:1fr; }
+  .footer-top { flex-direction:column; }
+  .socials, .footer-links { justify-content:center; }
+  .facts th, .facts td { padding:10px 12px; font-size:11px; }
+  .copyright { font-size:9px; }
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -888,11 +813,7 @@ footer {
     transition:none!important;
     scroll-behavior:auto!important;
   }
-
-  .reveal {
-    opacity:1;
-    transform:none;
-  }
+  .reveal { opacity:1; transform:none; }
 }
 </style>
 </head>
@@ -902,7 +823,7 @@ footer {
 <header>
   <div class="container nav">
 
-    <a href="#top" class="brand">
+    <a href="#top" class="brand" aria-label="روراست — صفحه اصلی">
       <svg viewBox="0 0 100 100" aria-hidden="true">
         <defs>
           <linearGradient id="brandGradient">
@@ -919,21 +840,20 @@ footer {
       <span>روراست<small>ROORAST</small></span>
     </a>
 
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="منوی اصلی">
       <a href="#about">روراست چیست؟</a>
       <a href="#features">قابلیت‌ها</a>
       <a href="#how">نحوه کار</a>
       <a href="#security">امنیت</a>
       <a href="#faq">سؤالات متداول</a>
+      <a href="#facts">حقایق</a>
     </nav>
 
-    <a class="nav-button" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
+    <a class="nav-button" href="https://t.me/RRastApp" target="_blank" rel="noopener noreferrer">
       دنبال‌کردن اخبار ↗
     </a>
 
-    <button class="menu-button" id="menuButton" aria-label="باز کردن منو" aria-expanded="false">
-      ☰
-    </button>
+    <button class="menu-button" id="menuButton" aria-label="باز کردن منو" aria-expanded="false">☰</button>
 
   </div>
 </header>
@@ -941,7 +861,6 @@ footer {
 <main id="top">
 
 <!-- HERO -->
-
 <section class="container hero">
 
   <div class="hero-copy reveal">
@@ -957,36 +876,35 @@ footer {
     </h1>
 
     <p class="hero-description">
-      روراست فضایی برای دریافت پیام‌های ناشناس و بازخوردهای صادقانه است؛
-      از یک تشکر ساده و تعریف دوستانه تا پیشنهاد و انتقادی که شاید
-      گفتنش رو‌در‌رو آسان نباشد.
+      روراست یک پلتفرم چندمنظوره است؛ جایی برای دریافت پیام‌های ناشناس با بررسی هوشمند محتوا،
+      گفت‌وگوی ناشناس، اشتراک‌گذاری لینک و محتوای کوتاه، آزمون «چقدر من را می‌شناسی؟»،
+      حمایت از توسعه‌دهنده و چند ابزار سبک وب — همه در یک تجربه منسجم.
     </p>
 
-    <p class="hero-sub">
-      یک تجربه تازه با تمرکز بر احترام، انتخاب و مسئولیت‌پذیری.
-    </p>
+    <div class="answer-first">
+      <b>پاسخ کوتاه:</b> روراست (RooRast) با آدرس رسمی <b>RRast.ir</b> و نسخه فعلی <b>R.RRast.ir</b>،
+      یک وب‌اپلیکیشن چندمنظوره است که توسط تیم <b>Argneshin</b> ساخته و توسط <b>AsliCode</b> کدنویسی شده است.
+      تمامی متن‌های ناشناس پیش از انتشار توسط چند ایجنت خودکار بررسی می‌شوند تا محیطی امن باقی بماند.
+    </div>
 
     <div class="actions">
-
-      <a class="btn btn-primary" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-primary" href="https://t.me/RRastApp" target="_blank" rel="noopener noreferrer">
         همراه ما در تلگرام ↗
       </a>
-
-      <a class="btn btn-secondary" href="https://www.instagram.com/RRAstApp/" target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-secondary" href="https://www.instagram.com/RRastApp/" target="_blank" rel="noopener noreferrer">
         صفحه اینستاگرام ↗
       </a>
-
     </div>
 
     <div class="trust">
+      <span><b>✓</b> بررسی هوشمند محتوا</span>
       <span><b>✓</b> احترام به حریم خصوصی</span>
-      <span><b>✓</b> بازخورد سازنده</span>
-      <span><b>✓</b> تجربه ساده</span>
+      <span><b>✓</b> تجربه ساده و یکپارچه</span>
     </div>
 
   </div>
 
-  <div class="visual reveal">
+  <div class="visual reveal" aria-hidden="true">
 
     <div class="orbit"></div>
 
@@ -994,15 +912,15 @@ footer {
       <span class="float-icon">✉</span>
       <span>
         <strong>حرفی برای گفتن داری؟</strong>
-        گاهی نوشتن آسان‌تر است.
+        ناشناس، صادقانه، محترمانه.
       </span>
     </div>
 
     <div class="float-card float-two">
       <span class="float-icon">♡</span>
       <span>
-        <strong>صادقانه و محترمانه</strong>
-        حرفی که ارزش شنیدن دارد.
+        <strong>چقدر من را می‌شناسی؟</strong>
+        آزمون شناخت، با نتیجه قابل اشتراک.
       </span>
     </div>
 
@@ -1028,18 +946,16 @@ footer {
 </section>
 
 <!-- ABOUT -->
-
 <section class="content-section" id="about">
-
   <div class="container">
 
     <div class="section-heading reveal">
       <span class="kicker">ABOUT ROORAST</span>
       <h2>روراست دقیقاً چیست؟</h2>
       <p>
-        قرار نیست یک شبکه اجتماعی دیگر یا یک پیام‌رسان شلوغ باشیم.
-        روراست برای ساده‌تر کردن یک کار مشخص ساخته می‌شود:
-        رساندن حرف‌هایی که گفتنشان همیشه راحت نیست.
+        روراست یک شبکه اجتماعی دیگر یا یک پیام‌رسان شلوغ نیست.
+        یک جعبه‌ابزار یکپارچه است که چند سرویس پرکاربرد وب را در یک تجربه ساده کنار هم می‌آورد:
+        از پیام ناشناس و چت ناشناس تا آزمون شناخت، اشتراک‌گذاری لینک و ابزارهای روزمره.
       </p>
     </div>
 
@@ -1047,98 +963,97 @@ footer {
 
       <article class="feature reveal">
         <div class="feature-icon">✉</div>
-        <h3>پیام‌های ناشناس</h3>
-        <p>امکان ارسال پیام بدون نمایش هویت فرستنده به دریافت‌کننده، با رعایت محدودیت‌ها و سازوکارهای امنیتی سرویس.</p>
-      </article>
-
-      <article class="feature reveal">
-        <div class="feature-icon">♡</div>
-        <h3>حرف‌های خوب</h3>
-        <p>برای تشکر، تبریک، تعریف و بیان احساسات مثبت؛ گاهی یک جمله کوتاه حال کسی را بهتر می‌کند.</p>
+        <h3>پیام ناشناس با بررسی هوشمند</h3>
+        <p>متن دلخواهت را ناشناس بفرست و بازخورد صادقانه بگیر. تمام متن‌ها پیش از انتشار توسط چند ایجنت خودکار از نظر توهین، تهدید و هرزنامه بررسی می‌شوند.</p>
+        <span class="badge">مولتی‌ایجنتی</span>
       </article>
 
       <article class="feature reveal">
         <div class="feature-icon">⌁</div>
-        <h3>بازخورد سازنده</h3>
-        <p>پیشنهاد و انتقاد می‌تواند مفید باشد؛ وقتی هدفش کمک به بهتر شدن باشد، نه تحقیر کردن.</p>
-      </article>
-
-      <article class="feature reveal">
-        <div class="feature-icon">✎</div>
-        <h3>پیام با متن دلخواه</h3>
-        <p>برای زمانی که پیام آماده پاسخ‌گوی منظورت نیست و می‌خواهی حرفت را با بیان خودت بنویسی.</p>
+        <h3>اشتراک‌گذاری لینک و محتوای کوتاه</h3>
+        <p>مجموعه‌ای از لینک‌ها، ایده‌ها و متن‌های کوتاه را در یک صفحه مینیمال و قابل اشتراک کنار هم بگذار.</p>
+        <span class="badge">لینک بایو</span>
       </article>
 
       <article class="feature reveal">
         <div class="feature-icon">◎</div>
-        <h3>دریافت آسان</h3>
-        <p>ارسال و دریافت پیام از مسیرهای پشتیبانی‌شده با تمرکز بر تجربه‌ای ساده و قابل‌فهم.</p>
+        <h3>آزمون «چقدر من را می‌شناسی؟»</h3>
+        <p>آزمون‌های تعاملی بساز و ببین دوستانت چقدر واقعاً می‌شناسنت. نتیجه قابل اشتراک‌گذاری برای سرگرمی و دورهمی‌ها.</p>
+        <span class="badge">تعاملی</span>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">✦</div>
+        <h3>چت ناشناس</h3>
+        <p>گفت‌وگوی زنده و بدون افشای هویت، با همان لایه‌های نظارتی و ضدسوءاستفاده بخش پیام ناشناس.</p>
+        <span class="badge">زنده</span>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-icon">☕</div>
+        <h3>حمایت از توسعه‌دهنده</h3>
+        <p>اگر روراست برایت مفید بود، با یک حمایت کوچک از تیم توسعه حمایت کن تا مسیر بهبود محصول سریع‌تر ادامه پیدا کند.</p>
+        <span class="badge">حمایت مالی</span>
       </article>
 
       <article class="feature reveal">
         <div class="feature-icon">⚑</div>
-        <h3>گزارش و رسیدگی</h3>
-        <p>برای پیام‌های آزاردهنده یا سوءاستفاده، مسیر گزارش و بررسی در طراحی سرویس دیده شده است.</p>
+        <h3>ابزارهای سبک وب</h3>
+        <p>مدیریت سریع بوکمارک، دسترسی به سرویس‌های روزمره و چند ابزار کاربردی که ماهیت «همه‌کاره» روراست را کامل می‌کنند.</p>
+        <span class="badge">همه‌کاره</span>
       </article>
 
     </div>
 
   </div>
-
 </section>
 
 <!-- HOW -->
-
 <section class="content-section how-section" id="how">
-
   <div class="container">
 
     <div class="section-heading reveal">
       <span class="kicker">HOW IT WORKS</span>
       <h2>نحوه کار روراست</h2>
-      <p>یک مسیر ساده برای رساندن حرف‌ها به مقصد.</p>
+      <p>یک مسیر ساده برای رساندن حرف‌ها به مقصد — و یک لایه امنیتی نامرئی در پس‌زمینه.</p>
     </div>
 
     <div class="steps">
 
       <article class="step reveal">
         <span class="step-number">۰۱ / دریافت‌کننده</span>
-        <h3>صفحه دریافت پیام</h3>
-        <p>فرد مسیر اختصاصی دریافت پیام خود را در اختیار دیگران قرار می‌دهد.</p>
+        <h3>مسیر دریافت را فعال کن</h3>
+        <p>مسیر اختصاصی دریافت پیام ناشناس و آزمون شناخت خود را در اختیار دیگران بگذار.</p>
       </article>
 
       <article class="step reveal">
         <span class="step-number">۰۲ / فرستنده</span>
         <h3>انتخاب موضوع و نوشتن</h3>
-        <p>فرستنده موضوع مناسب را انتخاب می‌کند و پیام خود را مطابق قوانین سرویس می‌نویسد.</p>
+        <p>فرستنده موضوع مناسب را انتخاب می‌کند و پیامش را مطابق قوانین سرویس می‌نویسد.</p>
       </article>
 
       <article class="step reveal">
-        <span class="step-number">۰۳ / تحویل پیام</span>
+        <span class="step-number">۰۳ / تحویل</span>
         <h3>بررسی و ارسال</h3>
-        <p>پیام از مسیرهای کنترلی و ضدسوءاستفاده عبور می‌کند و به مقصد می‌رسد.</p>
+        <p>پیام از ایجنت‌های بررسی‌کننده و لایه‌های ضدسوءاستفاده عبور می‌کند و سپس به مقصد می‌رسد.</p>
       </article>
 
     </div>
 
   </div>
-
 </section>
 
-<!-- CATEGORIES -->
-
+<!-- FEATURES CATEGORIES -->
 <section class="content-section" id="features">
-
   <div class="container">
 
     <div class="section-heading reveal">
       <span class="kicker">MESSAGE CATEGORIES</span>
       <h2>برای چه حرف‌هایی؟</h2>
-      <p>موضوعات مختلف برای بیان بهتر منظورت.</p>
+      <p>موضوعات مختلف برای بیان بهتر منظورت — از یک تعریف کوچک تا انتقاد سازنده.</p>
     </div>
 
     <div class="categories reveal">
-
       <span class="category"><span>♡</span> تعریف و تمجید</span>
       <span class="category"><span>✦</span> تبریک</span>
       <span class="category"><span>♥</span> تشکر</span>
@@ -1147,41 +1062,38 @@ footer {
       <span class="category"><span>✎</span> انتقاد سازنده</span>
       <span class="category"><span>◈</span> انتقاد</span>
       <span class="category"><span>＋</span> پیام دلخواه</span>
-
     </div>
 
   </div>
-
 </section>
 
 <!-- SECURITY -->
-
 <section class="content-section" id="security">
-
   <div class="container">
 
     <div class="security-box reveal">
 
-      <div class="shield">♢</div>
+      <div class="shield" aria-hidden="true">♢</div>
 
       <div>
 
-        <span class="kicker">PRIVACY & SAFETY</span>
+        <span class="kicker">PRIVACY &amp; SAFETY</span>
 
         <h2>ناشناس بودن، بدون مسئولیت‌پذیری نیست.</h2>
 
         <p>
-          ناشناس بودن برای دریافت‌کننده به معنی مجاز بودن هر نوع محتوا نیست.
-          روراست با رویکردی مرحله‌ای به احراز فرستنده، فیلتر محتوای نامناسب
-          و رسیدگی به گزارش‌ها طراحی می‌شود.
-          جزئیات اجرایی و سیاست‌های حریم خصوصی پیش از راه‌اندازی شفاف‌سازی خواهند شد.
+          روراست با رویکردی مرحله‌ای طراحی می‌شود: بررسی خودکار محتوا پیش از انتشار،
+          فیلتر محتوای نامناسب، مقابله با سوءاستفاده، و مسیر گزارش تخلف.
+          جزئیات اجرایی و سیاست‌های حریم خصوصی پیش از راه‌اندازی رسمی شفاف‌سازی خواهند شد.
         </p>
 
         <div class="security-list">
-          <span><b>✓</b> توجه به حریم خصوصی</span>
+          <span><b>✓</b> بررسی چندایجنتی محتوا</span>
           <span><b>✓</b> کنترل محتوای آسیب‌زا</span>
-          <span><b>✓</b> گزارش تخلف</span>
+          <span><b>✓</b> مسیر گزارش تخلف</span>
           <span><b>✓</b> مقابله با سوءاستفاده</span>
+          <span><b>✓</b> محدودسازی هرزنامه</span>
+          <span><b>✓</b> احترام به حریم خصوصی</span>
         </div>
 
       </div>
@@ -1189,13 +1101,40 @@ footer {
     </div>
 
   </div>
+</section>
 
+<!-- FACTS (GEO) -->
+<section class="content-section" id="facts">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="kicker">KEY FACTS</span>
+      <h2>حقایق کلیدی</h2>
+      <p>اطلاعات رسمی و قابل استناد درباره روراست.</p>
+    </div>
+
+    <div class="facts reveal">
+      <table>
+        <tbody>
+          <tr><th>نام رسمی</th><td>RooRast / روراست</td></tr>
+          <tr><th>آدرس رسمی</th><td><a href="https://RRast.ir" target="_blank" rel="noopener noreferrer">RRast.ir</a></td></tr>
+          <tr><th>آدرس فعلی</th><td><a href="https://R.RRast.ir" target="_blank" rel="noopener noreferrer">R.RRast.ir</a></td></tr>
+          <tr><th>تیم توسعه</th><td>Argneshin (ارگنشین)</td></tr>
+          <tr><th>توسعه‌دهنده کد</th><td>AsliCode</td></tr>
+          <tr><th>کانال تلگرام تیم</th><td><a href="https://t.me/Argneshin" target="_blank" rel="noopener noreferrer">@Argneshin</a></td></tr>
+          <tr><th>آیدی رسمی تلگرام/اینستاگرام</th><td><a href="https://t.me/RRastApp" target="_blank" rel="noopener noreferrer">@RRastApp</a></td></tr>
+          <tr><th>آیدی سازنده</th><td><a href="https://t.me/AsliCode" target="_blank" rel="noopener noreferrer">@AsliCode</a></td></tr>
+          <tr><th>فوتر رسمی</th><td>© Argneshin · Coded by AsliCode</td></tr>
+          <tr><th>وضعیت</th><td>در حال آماده‌سازی — به‌زودی</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
 </section>
 
 <!-- FAQ -->
-
 <section class="content-section" id="faq">
-
   <div class="container">
 
     <div class="section-heading reveal">
@@ -1207,13 +1146,28 @@ footer {
     <div class="faq-list">
 
       <details class="reveal">
+        <summary>روراست چیست؟</summary>
+        <p>روراست یک پلتفرم چندمنظوره برای پیام ناشناس با بررسی هوشمند محتوا، چت ناشناس، اشتراک‌گذاری لینک و محتوای کوتاه، آزمون «چقدر من را می‌شناسی؟»، حمایت از توسعه‌دهنده و ابزارهای سبک وب است. ساخته‌شده توسط تیم Argneshin و کدنویسی‌شده توسط AsliCode.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>آدرس رسمی روراست کدام است؟</summary>
+        <p>آدرس رسمی <b>RRast.ir</b> و نسخه فعلی <b>R.RRast.ir</b> است. سایر آدرس‌ها رسمی نیستند.</p>
+      </details>
+
+      <details class="reveal">
         <summary>آیا روراست یک پیام‌رسان است؟</summary>
-        <p>خیر. روراست برای دریافت پیام‌های ناشناس و بازخورد طراحی شده و قرار نیست جای پیام‌رسان‌های معمول را بگیرد.</p>
+        <p>خیر. روراست برای پیام ناشناس، بازخورد صادقانه و چند ابزار سبک وب طراحی شده و قرار نیست جای پیام‌رسان‌های معمول را بگیرد.</p>
       </details>
 
       <details class="reveal">
         <summary>آیا هویت فرستنده کاملاً غیرقابل‌شناسایی است؟</summary>
-        <p>ناشناس بودن در تجربه دریافت‌کننده با ناشناس بودن مطلق در سطح فنی یا حقوقی یکسان نیست. برای جلوگیری از سوءاستفاده ممکن است بررسی‌های امنیتی و احراز مرحله‌ای انجام شود.</p>
+        <p>ناشناس‌بودن نسبت به دریافت‌کننده با ناشناس‌بودن مطلق در سطح فنی یا حقوقی یکسان نیست. برای جلوگیری از سوءاستفاده، ممکن است بررسی‌های امنیتی و احراز مرحله‌ای انجام شود.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>آیا متن‌ها بررسی می‌شوند؟</summary>
+        <p>بله. در بخش‌های پیام ناشناس و چت ناشناس، متن‌ها پیش از انتشار توسط چند ایجنت خودکار از نظر نقض قوانین، توهین، تهدید و هرزنامه بررسی می‌شوند.</p>
       </details>
 
       <details class="reveal">
@@ -1228,81 +1182,67 @@ footer {
 
       <details class="reveal">
         <summary>روراست چه زمانی منتشر می‌شود؟</summary>
-        <p>زمان دقیق انتشار هنوز اعلام نشده است. اخبار رسمی از طریق شبکه‌های اجتماعی روراست منتشر خواهد شد.</p>
+        <p>زمان دقیق انتشار هنوز اعلام نشده است. اخبار رسمی از طریق کانال تلگرام <b>@Argneshin</b> و آیدی <b>@RRastApp</b> منتشر می‌شود.</p>
+      </details>
+
+      <details class="reveal">
+        <summary>چگونه از روراست حمایت کنم؟</summary>
+        <p>پس از انتشار رسمی، بخش حمایت از توسعه‌دهنده در سایت فعال می‌شود. تا آن زمان می‌توانی با دنبال‌کردن و اشتراک‌گذاری اخبار از تیم حمایت کنی.</p>
       </details>
 
     </div>
 
   </div>
-
 </section>
 
 <!-- FINAL CTA -->
-
 <section class="container content-section">
-
   <div class="final-cta reveal">
-
     <span class="kicker">COMING SOON</span>
-
     <h2>شروعش نزدیک است.</h2>
-
     <p>
       برای اطلاع از خبرهای انتشار، معرفی قابلیت‌ها و زمان شروع فعالیت،
       روراست را در شبکه‌های اجتماعی دنبال کن.
     </p>
-
     <div class="actions">
-
-      <a class="btn btn-primary" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
-        تلگرام ↗
-      </a>
-
-      <a class="btn btn-secondary" href="https://www.instagram.com/RRAstApp/" target="_blank" rel="noopener noreferrer">
-        اینستاگرام ↗
-      </a>
-
+      <a class="btn btn-primary" href="https://t.me/RRastApp" target="_blank" rel="noopener noreferrer">تلگرام ↗</a>
+      <a class="btn btn-secondary" href="https://www.instagram.com/RRastApp/" target="_blank" rel="noopener noreferrer">اینستاگرام ↗</a>
     </div>
-
   </div>
-
 </section>
 
 </main>
 
-<!-- FOOTER -->
-
 <footer>
-
   <div class="container">
 
     <div class="footer-top">
-
       <div class="footer-brand">
-
         <svg viewBox="0 0 100 100" aria-hidden="true">
           <path d="M18 18Q18 9 29 9H71Q91 9 91 29V57Q91 76 72 76H52L31 93Q24 98 24 87V76Q9 72 9 56V29Q9 18 18 18Z" fill="#5b8cff"/>
           <circle cx="34" cy="43" r="5" fill="white"/>
           <circle cx="50" cy="43" r="5" fill="white"/>
           <circle cx="66" cy="43" r="5" fill="white"/>
         </svg>
-
         <span>روراست</span>
-
       </div>
 
       <div class="socials">
-
-        <a class="social" href="https://t.me/RRAstApp" target="_blank" rel="noopener noreferrer">
-          تلگرام ↗
-        </a>
-
-        <a class="social" href="https://www.instagram.com/RRAstApp/" target="_blank" rel="noopener noreferrer">
-          اینستاگرام ↗
-        </a>
-
+        <a class="social" href="https://t.me/RRastApp" target="_blank" rel="noopener noreferrer">تلگرام ↗</a>
+        <a class="social" href="https://www.instagram.com/RRastApp/" target="_blank" rel="noopener noreferrer">اینستاگرام ↗</a>
+        <a class="social" href="https://t.me/Argneshin" target="_blank" rel="noopener noreferrer">کانال تیم ↗</a>
+        <a class="social" href="https://t.me/AsliCode" target="_blank" rel="noopener noreferrer">سازنده ↗</a>
       </div>
+    </div>
 
+    <div class="footer-links">
+      <a href="/LICENSE.fa.md">لایسنس</a>
+      <a href="/TERMS.fa.md">شرایط و ضوابط</a>
+      <a href="/PRIVACY.fa.md">حریم خصوصی</a>
+      <a href="/SECURITY.md">امنیت</a>
+      <a href="/README.fa.md">درباره</a>
+      <a href="https://RRast.ir" target="_blank" rel="noopener noreferrer">RRast.ir</a>
+      <a href="https://R.RRast.ir" target="_blank" rel="noopener noreferrer">R.RRast.ir</a>
     </div>
 
     <div class="copyright">
@@ -1310,18 +1250,15 @@ footer {
     </div>
 
   </div>
-
 </footer>
 
 <script>
 /* Mobile navigation */
-
 const menuButton = document.getElementById("menuButton");
 const navLinks = document.getElementById("navLinks");
 
 menuButton.addEventListener("click", function() {
   const opened = navLinks.classList.toggle("open");
-
   menuButton.setAttribute("aria-expanded", String(opened));
   menuButton.textContent = opened ? "✕" : "☰";
 });
@@ -1335,36 +1272,21 @@ navLinks.querySelectorAll("a").forEach(function(link) {
 });
 
 /* Reveal animations */
-
 const revealElements = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
-
   const observer = new IntersectionObserver(function(entries) {
-
     entries.forEach(function(entry) {
-
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
         observer.unobserve(entry.target);
       }
-
     });
+  }, { threshold: 0.08 });
 
-  }, {
-    threshold: 0.08
-  });
-
-  revealElements.forEach(function(element) {
-    observer.observe(element);
-  });
-
+  revealElements.forEach(function(el) { observer.observe(el); });
 } else {
-
-  revealElements.forEach(function(element) {
-    element.classList.add("show");
-  });
-
+  revealElements.forEach(function(el) { el.classList.add("show"); });
 }
 </script>
 
